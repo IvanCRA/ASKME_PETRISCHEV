@@ -1,5 +1,6 @@
 body {
     margin: 0;
+    font-family: sans-serif;
 }
 
 .header {
@@ -39,4 +40,19 @@ body {
 .search-form-input {
     height: 23px;
     width: 300px;
+}
+
+.main-content {
+    padding: 10px;
+
+}
+
+.title-bar {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+li:first-child {
+    color: red;
 }
