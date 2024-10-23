@@ -61,7 +61,10 @@ body {
 
 
 .cards {
+    display: flex;
     width: 70%;
+    flex-direction: column;
+    gap: 20px;
 }
 
 .sidebar {
@@ -83,13 +86,13 @@ body {
 }
 
 .card-image {
-    width: 100px;
+    width: 100%;
     height: 100px;
     border: 1px solid black;
 }
 
 .card-likes {
-    width: 100px;
+    width: 100%;
     padding: 0px;
 }
 
@@ -97,4 +100,16 @@ body {
     margin: 0;
     font-size: 24px;
     margin-bottom: 10px;
+}
+
+.card-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.card-right-bottom {
+    display: flex;
+    justify-content: space-between;
 }
