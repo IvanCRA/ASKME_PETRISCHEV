@@ -3,113 +3,149 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Question Page</title>
+    <title>Bootstrap demo</title>
     <link rel="stylesheet" href="./../static/css/bootstrap.min.css">
   </head>
   <body>
-    <!-- Навбар -->
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">Warhammer:40KAsk</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+            <div class="d-flex w-100 justify-content-between align-items-center">
+          <a class="navbar-brand" href="#">Warhammer:40KAsk</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+            
             <form class="d-flex" role="search">
-                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Ask">
-                <button class="btn btn-outline-success" type="submit">Search</button>
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Ask">
+              <button class="btn btn-outline-success" type="submit">Search</button>
             </form>
-        </div>
-    </nav>
 
-    <!-- Основное содержимое страницы -->
-    <main class="container mt-3">
-      <div class="row">
-        <!-- Левая колонка с вопросом -->
-        <div class="col-9">
-          <!-- Вопрос -->
-          <div class="row mb-3">
-            <div class="col-2 text-center">
-              <img src="avatar.jpg" alt="Avatar" class="img-thumbnail" style="width: 100px;">
-              <input type="number" class="form-control mt-2" value="5" placeholder="Reputation" aria-label="Reputation">
-            </div>
-            <div class="col-10">
-              <h3>Question Title</h3>
-              <p>Here is the detailed text of the question where the user can elaborate on the query.</p>
-              <div class="mt-2">
-                <span class="badge bg-primary">Tag1</span>
-                <span class="badge bg-secondary">Tag2</span>
-                <span class="badge bg-success">Tag3</span>
-              </div>
-            </div>
-          </div>
-
-          <!-- Разделительная линия -->
-          <hr>
-
-          <!-- Ответы -->
-          <div id="answers">
-            <!-- Пример ответа -->
-            <div class="row mb-3">
-              <div class="col-2 text-center">
-                <img src="avatar.jpg" alt="Avatar" class="img-thumbnail" style="width: 80px;">
-              </div>
-              <div class="col-10">
-                <p>This is an example answer where the user provides their insight or solution to the question.</p>
-                <div class="form-check">
-                  <input type="checkbox" class="form-check-input" id="correctAnswer1">
-                  <label class="form-check-label" for="correctAnswer1">Correct!</label>
+          <div class="d-flex gap-1">
+            <img src="qwert.jpg" alt="Avatar" class="img-thumbnail">
+            <div>
+                <div>
+                    dr pepper
                 </div>
-              </div>
+                <a href="#">settings</a>
+                <a href="#">log out</a>
             </div>
 
-            <!-- Линия под ответом -->
-            <hr>
-
-            <!-- Дополнительные ответы можно добавлять здесь с такой же структурой -->
-          </div>
-
-          <!-- Поле для ввода ответа -->
-          <div class="mt-4">
-            <label for="userAnswer" class="form-label">Enter your answer here</label>
-            <textarea class="form-control" id="userAnswer" rows="4" placeholder="Write your answer here..."></textarea>
-            <button type="submit" class="btn btn-primary mt-3">Answer</button>
           </div>
         </div>
-
-        <!-- Правая колонка с популярными тегами и лучшими участниками -->
-        <div class="col-3">
-          <!-- Популярные теги -->
-          <section class="mb-3">
-            <h2>Popular Tags</h2>
-            <div>
-              <span class="badge text-bg-primary">Primary</span>
-              <span class="badge text-bg-secondary">Secondary</span>
-              <span class="badge text-bg-success">Success</span>
-              <span class="badge text-bg-danger">Danger</span>
-              <span class="badge text-bg-warning">Warning</span>
-              <span class="badge text-bg-info">Info</span>
-              <span class="badge text-bg-light">Light</span>
-              <span class="badge text-bg-dark">Dark</span>
-            </div>
-          </section>
-
-          <!-- Лучшие участники -->
-          <section>
-            <h2>Member Best</h2>
-            <div>
-              <ul class="list-group list-group-flush">
-                <li class="list-group-item"><a href="#">Member</a></li>
-                <li class="list-group-item"><a href="#">Member</a></li>
-                <li class="list-group-item"><a href="#">Member</a></li>
-                <li class="list-group-item"><a href="#">Member</a></li>
-                <li class="list-group-item"><a href="#">Member</a></li>
-              </ul>
-            </div>
-          </section>
         </div>
-      </div>
-    </main>
+      </nav>
 
+      <main class="container mt-3">
+
+        <div class="row">
+            <div class="col-9">
+                <div class="d-flex flex-column gap-3">
+                    <div class="w-100" style="width: 18rem;">
+                        <div class="">
+                            <div class="row">
+                                <div class="col-3">
+                                    <div class="border mb-2" style="height: 100px;">
+                                        <img src="image.jpg" alt="Avatar" class="img-thumbnail img-fluid">
+                                    </div>
+                                    <input type="number" class="form-control" value="5" placeholder="Default input" aria-label="default input example">
+
+                                </div>
+                                <div class="col-9">
+
+                                    <h1 class="card-title">Card title</h1>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        
+                                    <div>Tags:
+                                        <a href="#" class="badge bg-primary text-decoration-none">Tag1</a>
+                                        <a href="#" class="badge bg-secondary text-decoration-none">Tag2</a>
+                                        <a href="#" class="badge bg-info text-decoration-none">Tag3</a>
+                                      </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+
+                    <div class="card w-100" style="width: 18rem;">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-3">
+                                    <div class="border mb-2" style="height: 100px;">
+                                        <img src="image.jpg" alt="Avatar" class="img-thumbnail img-fluid">
+                                    </div>
+                                    <input type="number" class="form-control" value="5" placeholder="Default input" aria-label="default input example">
+
+                                </div>
+                                <div class="col-9">
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    <div>
+                                        <label><input type="checkbox"> Correct!</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <hr>
+
+                    <textarea class="form-control my-3" rows="5" placeholder="Enter your answer here"></textarea>
+                    <button class="btn btn-primary">Answer</button>
+
+                    <nav aria-label="Page navigation example" class="mt-3">
+                        <ul class="pagination">
+                          <li class="page-item">
+                            <a class="page-link" href="#" aria-label="Previous">
+                              <span aria-hidden="true">&laquo;</span>
+                            </a>
+                          </li>
+                          <li class="page-item"><a class="page-link" href="#">1</a></li>
+                          <li class="page-item"><a class="page-link" href="#">2</a></li>
+                          <li class="page-item"><a class="page-link" href="#">3</a></li>
+                          <li class="page-item">
+                            <a class="page-link" href="#" aria-label="Next">
+                              <span aria-hidden="true">&raquo;</span>
+                            </a>
+                          </li>
+                        </ul>
+                      </nav>
+                    
+
+                </div>
+            </div>
+            
+            <div class="col">
+                <section class="mb-3">
+                    <h2>Popular Tags</h2>
+                    <div>
+                        <span class="badge text-bg-primary">Primary</span>
+                        <span class="badge text-bg-secondary">Secondary</span>
+                        <span class="badge text-bg-success">Success</span>
+                        <span class="badge text-bg-danger">Danger</span>
+                        <span class="badge text-bg-warning">Warning</span>
+                        <span class="badge text-bg-info">Info</span>
+                        <span class="badge text-bg-light">Light</span>
+                        <span class="badge text-bg-dark">Dark</span>
+                    </div>
+                </section>
+
+                <section>
+                    <h2>Member best</h2>
+                    <div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item"><a href="#">Member</a></li>
+                            <li class="list-group-item"><a href="#">Member</a></li>
+                            <li class="list-group-item"><a href="#">Member</a></li>
+                            <li class="list-group-item"><a href="#">Member</a></li>
+                            <li class="list-group-item"><a href="#">Member</a></li>
+                            <li class="list-group-item"><a href="#">Member</a></li>
+
+                          </ul>
+                    </div>
+                </section>
+            </div>
+
+        </div>
+      </main>
     <script src="./../static/js/bootstrap.min.js"></script>
   </body>
 </html>
